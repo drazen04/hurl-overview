@@ -22,18 +22,26 @@ fastify.get("/users/:id", async (request, reply) => {
 });
 
 fastify.post("/users", async (request, reply) => {
-  const id = randomUUID();
-  const user = {
-    id,
-    name: request.body.name || "Anonymous",
-    email: request.body.email || `user${id}@example.com`,
-    createdAt: new Date().toISOString(),
-  };
-  users.set(id, user);
+  const user = request?.body ? createUser(request.body) : createAnonUser();
+  users.set(user.id, user);
   request.log.info(`users: ${users.entries.length}`);
   reply.code(201);
   return user;
 });
+
+const createUser = ({ name, email }) => {
+  const id = randomUUID();
+  return {
+    id,
+    name,
+    email: email || `user${id}@example.com`,
+    createdAt: new Date().toISOString(),
+  };
+};
+
+const createAnonUser = () => {
+  return createUser({ name: "Anonymous" });
+};
 
 fastify.put("/users/:id", async (request, reply) => {
   const id = request.params.id;
