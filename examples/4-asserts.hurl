@@ -7,6 +7,6 @@ POST http://localhost:3000/users
 ```
 
 HTTP 201
-# ^^^^^^ assert on status code
 
-## TODO: ADD CAPTURE SECTION
+[Asserts]
+jsonpath "$.id" isUuid
