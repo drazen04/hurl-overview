@@ -1,3 +1,7 @@
+### HURL ###
+usage/report/html/**
+usage/report/json/**
+
 ### Node ###
 # Logs
 logs
