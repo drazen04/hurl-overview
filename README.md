@@ -5,7 +5,7 @@ A simple project demonstrating [Hurl](https://hurl.dev) - a command-line tool fo
 ## Prerequisites
 
 - **Node.js** and **npm** - To run the test API server
-- **Hurl CLI** - Install from [hurl.dev](https://hurl.dev)
+- **Hurl CLI** - Install from [hurl.dev](https://hurl.dev/docs/installation.html)
   ```bash
   # macOS
   brew install hurl
@@ -84,38 +84,3 @@ The test server provides these endpoints:
 | POST | `/users` | Create user (with body) or anonymous user (without body) |
 | PUT | `/users/:id` | Update user |
 | DELETE | `/users/:id` | Delete user |
-
-## Example Commands
-
-### Run a single Hurl file
-```bash
-hurl concepts/1-simple-request.hurl
-```
-
-### Run with test mode (shows pass/fail)
-```bash
-hurl --test concepts/4-asserts.hurl
-```
-
-### Run with verbose output
-```bash
-hurl --verbose usage/chain-of-requests.hurl
-```
-
-### Run all concept examples
-```bash
-hurl --test concepts/*.hurl
-```
-
-### Run with custom variables
-```bash
-hurl --variable host=localhost --variable port=3000 usage/chain-of-requests-with-var.hurl
-```
-
-## What's Demonstrated
-
-- **Simple Requests** - Basic HTTP methods (GET, POST, DELETE)
-- **Captures** - Extract data from responses using JSONPath
-- **Assertions** - Validate status codes and response content
-- **Variable Substitution** - Use captured values in subsequent requests
-- **Request Chaining** - Build complete workflows with multiple related requests
