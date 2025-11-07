@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-hurl --test examples/*
+hurl --test concepts/*.hurl
+hurl --test usage/*.hurl
