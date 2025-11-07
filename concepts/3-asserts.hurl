@@ -4,3 +4,4 @@ HTTP 201
 
 [Asserts]
 jsonpath "$.name" == "Anonymous"
+jsonpath "$.name" isString
