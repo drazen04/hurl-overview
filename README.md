@@ -41,23 +41,23 @@ A simple project demonstrating [Hurl](https://hurl.dev) - a command-line tool fo
    ./test-hurl-files.sh
 
    # Or run specific examples
-   hurl --test concepts/1-simple-request.hurl
+   hurl --test basic-concepts/1-simple-request.hurl
    hurl --test usage/chain-of-requests.hurl
    ```
 
 ## Running Examples
 
-### Concepts (Progressive Examples)
+### basic-concepts (Progressive Examples)
 
 ```bash
 # 1. Simple HTTP request with status assertion
-hurl --test concepts/1-simple-request.hurl
+hurl --test basic-concepts/1-simple-request.hurl
 
 # 2. Capture data from response using JSONPath
-hurl --test concepts/2-captures.hurl
+hurl --test basic-concepts/2-captures.hurl
 
 # 3. Assertions - validate response content
-hurl --test concepts/4-asserts.hurl
+hurl --test basic-concepts/4-asserts.hurl
 ```
 
 ### Usage (Complete Workflow)
