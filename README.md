@@ -2,6 +2,11 @@
 
 A simple project demonstrating [Hurl](https://hurl.dev) - a command-line tool for running and testing HTTP requests with plain text files.
 
+## Hurl in a Nutshell 
+Hurl's docs speak for themself, but if you are too lazy to read, here is what hurl is in his essence:
+- hurl is a tool built on top of cURL's engine (try to run hurl with ```-v``` flag and hurl will show you its 'heart')
+- hurl is a HTTP request test runner with some load testing functionalities in it
+
 ## Prerequisites
 
 - **Node.js** and **npm** - To run the test API server
