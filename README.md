@@ -2,7 +2,7 @@
 
 A simple project demonstrating [Hurl](https://hurl.dev) - a command-line tool for running and testing HTTP requests with plain text files.
 
-## Hurl in a Nutshell 
+## Hurl in a Nutshell
 Hurl's docs speak for themself, but if you are too lazy to read, here is what hurl is in his essence:
 - hurl is a tool built on top of cURL's engine (try to run hurl with ```-v``` flag and hurl will show you its 'heart')
 - hurl is a HTTP request test runner with some load testing functionalities in it
@@ -12,18 +12,16 @@ Hurl's docs speak for themself, but if you are too lazy to read, here is what hu
 - **Node.js** and **npm** - To run the test API server
 - **Hurl CLI** - Install from [hurl.dev](https://hurl.dev/docs/installation.html)
   ```bash
-  # macOS
+  ## Quick installation commands if you have use package manager
+
+  # macOS (via Homebrew)
   brew install hurl
 
-  # Linux
-  curl -LO https://github.com/Orange-OpenSource/hurl/releases/latest/download/hurl_amd64.deb
-  sudo dpkg -i hurl_amd64.deb
-
-  # Linux (mise)
+  # Linux (via mise)
   mise install hurl
   mise use -g hurl
 
-  # Windows
+  # Windows (via Chocolatey)
   choco install hurl
   ```
 
