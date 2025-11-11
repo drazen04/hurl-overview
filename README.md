@@ -12,7 +12,7 @@ Hurl's docs speak for themself, but if you are too lazy to read, here is what hu
 - **Node.js** and **npm** - To run the test API server
 - **Hurl CLI** - Install from [hurl.dev](https://hurl.dev/docs/installation.html)
   ```bash
-  ## Quick installation commands if you have use package manager
+  ## Quick installation with package managers
 
   # macOS (via Homebrew)
   brew install hurl
